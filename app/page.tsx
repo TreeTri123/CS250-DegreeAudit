@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex w-full max-w-3xl flex-col items-center justify-between py-40 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           src="/EESlogo.png"
           alt="Eagle Eyed Scholar logo"
@@ -42,7 +42,28 @@ export default function Home() {
             Github
           </a>
         </div>
+
+        {/*Getting Started Button*/}
+        <a
+          href="#getting-started-info"
+          className="mt-12 rounded-full bg-black text-white px-6 py-3 hover:bg-gray-800"
+        >
+          Getting Started ↓
+        </a>
       </main>
+
+      {/* Getting Started Info*/}
+      <section
+        id="getting-started-info"
+        className="w-full flex flex-col items-center justify-center bg-white py-20 px-16 dark:bg-black"
+      >
+        <h2 className="text-2xl font-semibold mb-4 text-center">
+          See How Your Courses Apply to Your Degree
+        </h2>
+        <p className="max-w-2xl text-center leading-relaxed text-zinc-600 dark:text-zinc-400">
+          Complete the form beow with your school, courses you have taken, and your intended major to see classes that count towards your major and what classes you need to take. 
+        </p>
+      </section>
     </div>
   );
 }
