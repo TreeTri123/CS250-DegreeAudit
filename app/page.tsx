@@ -2,8 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans ">
       <main className="flex w-full max-w-3xl flex-col items-center justify-between py-40 px-16 bg-white dark:bg-black sm:items-start">
+        {/* Logo and Description */}
         <Image
           src="/EESlogo.png"
           alt="Eagle Eyed Scholar logo"
@@ -18,14 +19,7 @@ export default function Home() {
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
              A smarter way to plan your path to SDSU. Track how community college courses apply to your degree and see your progress toward graduation before you even transfer.
           </p>
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-              priority
-            />
+          {/* GitHub */}
           <a
             className="flex h-12 w-full items-center justify-center gap-2 rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
             href="https://github.com/DylanRowland/CS250-DegreeAudit"
