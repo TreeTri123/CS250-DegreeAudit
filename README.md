@@ -25,6 +25,43 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## Starting/Testing Backend
+
+First cd into the backend
+```bash
+cd backend
+```
+
+Create the virtual environment
+```bash
+uv venv
+```
+
+Then activate the environment
+
+(Windows)
+```bash
+.\.venv\Scripts\activate
+```
+
+(Mac/Linux)
+```bash
+source .venv/bin/activate
+```
+
+Then install all of the dependencies
+```bash
+uv pip install fastapi uvicorn
+```
+
+Lastly, run the server!
+```bash
+uv run uvicorn main:app --reload --port 8000
+```
+
+To open Swagger UI make sure you are on this url:
+http://127.0.0.1:8000/docs
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
