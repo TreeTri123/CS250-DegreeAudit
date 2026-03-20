@@ -1,9 +1,12 @@
+'use client';
 import Image from "next/image";
+import TopBar from './components/TopBar';
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-zinc-50 font-sans ">
-      <main className="flex w-full max-w-3xl flex-col items-center justify-between py-40 px-16 bg-white sm:items-start">
+      <TopBar />
+    <main className="flex w-full max-w-3xl flex-col items-center justify-between py-40 px-16 bg-white sm:items-start">
         {/* Logo and Description */}
         <Image
           src="/EESlogo.png"
